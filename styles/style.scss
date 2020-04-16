@@ -1,0 +1,333 @@
+@import "breakpoint.scss";
+
+* {
+  font-family: "Montserrat", "Sans-serif";
+}
+.wrap {
+  width: 100%;
+  overflow-x: hidden;
+}
+.introduce {
+  width: 100vw;
+
+  background-image: url("../image/image\ 13.png");
+  @include for-large-down {
+    display: block;
+    height: 100%;
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin-left: 40px;
+    @include for-large-down {
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 42px;
+      color: #0085ff;
+      margin: 100px 20px 0 0;
+      @include for-large-down {
+        font-size: 32px;
+        margin-left: 50px;
+      }
+    }
+    &__description {
+      font-size: 26px;
+      color: #304551;
+      margin: 0;
+      margin-top: 48px;
+      @include for-large-down {
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        font-size: 20px;
+      }
+    }
+    &__btn {
+      background-color: #0085ff;
+      color: #ffffff;
+      border-radius: 12px;
+      width: 334px;
+      height: 84px;
+      margin: 0;
+      margin-top: 61px;
+      @include for-large-down {
+        margin-top: 190px;
+      }
+      &-text {
+        display: block;
+        margin: auto;
+        font-size: 18px;
+        font-style: bold;
+      }
+    }
+    &__wrap {
+      display: block;
+      opacity: 80%;
+      color: #193d50;
+      font-size: 16px;
+      font-family: "Open Sans";
+      margin: 15px 0 0 100px;
+      @include for-large-down {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 20px;
+      }
+      &-link {
+        cursor: pointer;
+      }
+    }
+  }
+  &-lastColumn {
+    width: 550px;
+  }
+  &-row {
+    background-color: #ffffff;
+    max-width: 525px;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 150px 10px 0 0;
+    @include for-large-down {
+      max-width: 330px;
+      margin-bottom: 50px;
+      margin-left: 25px;
+    }
+    &-title {
+      color: #49d280;
+      width: 186px;
+      height: 24px;
+      font-size: 45px;
+      margin: 48px 0 63px 32px;
+      @include for-large-down {
+        font-size: 34px;
+      }
+    }
+    &-special {
+      color: #49d280;
+      font-size: 55px;
+      margin: 48px 24px 43px 32px;
+      @include for-large-down {
+        margin-bottom: 30px;
+      }
+    }
+    &-title:nth-child(2) {
+      font-size: 55px;
+      width: 107px;
+      margin: 48px 0 63px 10px;
+    }
+    &-value {
+      display: block;
+      width: 57px;
+      font-size: 20px;
+      color: #49d280;
+      opacity: 80%;
+      margin: 55px 0 26px 0;
+    }
+
+    &-description {
+      color: #304551;
+      font-size: 18px;
+      margin: 35px 9px 17px 0;
+      line-height: 18px;
+      @include for-large-down {
+        font-size: 15px;
+      }
+    }
+    &-description:nth-child(2) {
+      margin: 31px 0 21px 0;
+    }
+    &-percent {
+      color: #304551;
+      font-size: 18px;
+      margin: 36px 0 26px 35px;
+    }
+  }
+  &-row:nth-child(2) {
+    width: 443px;
+    margin-top: 10px;
+
+  }
+  &-row:nth-child(3) {
+    width: 368px;
+    margin-top: 10px;
+  }
+  &-images-img {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    @include for-large-down {
+      display: none;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 550px;
+  height: 600px;
+}
+.offer {
+  position: relative;
+  &__row {
+    margin: 110px 0 99px 0;
+    @include for-large-down {
+      margin: 50px 0 30px 15px;
+    }
+    &-title {
+      font-size: 28px;
+      color: #2f2f2f;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 250px;
+    max-width: 1400px;
+    @include for-large-down {
+      display: none;
+    }
+  }
+  &__btn {
+    background-color: #00d148;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 334px;
+    height: 84px;
+    display: block;
+    margin: auto;
+    margin-top: 265px;
+    margin-bottom: 132px;
+    @include for-large-down {
+      margin-top: 50px;
+    }
+    &-text {
+      display: block;
+      margin: auto;
+      font-size: 18px;
+      font-style: bold;
+    }
+  }
+}
+.column__card {
+  display: flex;
+  @include for-large-down {
+    display: block;
+  }
+
+  &-wrap {
+    &-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #575757;
+    }
+    &-description {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      color: #525252;
+    }
+  }
+  &-img {
+    max-width: 150px;
+    max-height: 130px;
+    @include for-large-down {
+      margin-left: 120px;
+      margin-bottom: 35px;
+      display: block;
+    }
+  }
+}
+
+.additionally {
+  background-color: #3a3e4e;
+  @include for-large-down {
+    display: flex;
+    flex-direction: column;
+  }
+  &-card {
+    margin: 94px 0px 43px 0px;
+    padding: 0;
+    padding-left: 65px;
+    @include for-large-down {
+      margin: 0;
+      padding: 60px;
+    }
+  }
+}
+.card__title {
+  color: #45a6ff;
+  font-size: 16px;
+  font-weight: bold;
+  @include for-large-down {
+    font-size: 36px;
+
+  }
+}
+  .card__columns {
+          
+    &-item {
+      color: #e0e0e0;
+      font-size: 16px;
+      font-weight: regular;
+      @include for-large-down {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+    }
+   
+  }
+
+  .info{
+    background-color: #363A49;
+    @include for-large-down {
+      display: flex;
+      flex-direction: column;
+    
+    }
+    &__questions{
+      color: #45A6FF;
+      font-size: 16px;
+      font-weight: bold;
+      padding-left: 60px;
+      @include for-large-down {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+    }
+    &__phone{
+      font-size: 14px;
+      color: #e0e0e0;
+      @include for-large-down {
+        font-size: 25px;
+        margin-top: 20px;
+        padding-left: 60px;
+      }
+
+      &-link{
+        color: #e0e0e0;
+      }
+    }
+    &__email{
+      font-size: 14px;
+      color: #e0e0e0;
+      @include for-large-down {
+        font-size: 25px;
+        margin-top: 50px;
+        padding-left: 60px;
+
+      }
+
+      &-link{
+        color: #e0e0e0;
+      }
+    }
+  }
+ 
+
